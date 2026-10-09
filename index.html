@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intuitive Apps LLC</title>
+  <meta name="description" content="Intuitive Apps LLC builds thoughtful mobile applications focused on wellbeing and daily habits.">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root { --navy: #1E2A3A; --slate: #3A4A5C; --light-gray: #F5F7FA; --white: #FFFFFF; --accent: #4A7C6F; --accent-light: rgba(74, 124, 111, 0.08); --text: #2C3340; --text-light: #6B7280; --border: #E5E7EB; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; color: var(--text); background: var(--white); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+    nav { display: flex; justify-content: space-between; align-items: center; padding: 24px 40px; max-width: 1000px; margin: 0 auto; }
+    .logo { font-size: 1.2rem; font-weight: 700; color: var(--navy); text-decoration: none; }
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a { text-decoration: none; color: var(--text-light); font-size: 0.95rem; font-weight: 500; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--accent); }
+    .hero { max-width: 680px; margin: 0 auto; padding: 100px 24px 80px; text-align: center; }
+    .hero h1 { font-size: 2.6rem; font-weight: 800; line-height: 1.2; margin-bottom: 20px; color: var(--navy); }
+    .hero p { font-size: 1.15rem; color: var(--text-light); max-width: 520px; margin: 0 auto; line-height: 1.7; }
+    .products { max-width: 800px; margin: 0 auto; padding: 0 24px 80px; }
+    .products h2 { text-align: center; font-size: 1.1rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-light); margin-bottom: 32px; }
+    .product-card { display: flex; align-items: center; gap: 28px; background: var(--light-gray); border-radius: 16px; padding: 32px; }
+    .product-icon { width: 72px; height: 72px; border-radius: 18px; background: linear-gradient(135deg, #78AD94 0%, #5E9479 100%); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .product-icon .sun { width: 32px; height: 32px; background: radial-gradient(circle, #E8A849 40%, rgba(232, 168, 73, 0.4) 70%, transparent 100%); border-radius: 50%; }
+    .product-info h3 { font-size: 1.2rem; font-weight: 700; margin-bottom: 4px; color: var(--navy); }
+    .product-info h3 a { color: inherit; text-decoration: none; }
+    .product-info h3 a:hover { color: var(--accent); }
+    .product-info p { color: var(--text-light); font-size: 0.95rem; }
+    .product-badge { display: inline-block; background: var(--accent-light); color: var(--accent); font-size: 0.78rem; font-weight: 600; padding: 3px 10px; border-radius: 6px; margin-top: 8px; }
+    .about { border-top: 1px solid var(--border); max-width: 600px; margin: 0 auto; padding: 64px 24px; text-align: center; }
+    .about h2 { font-size: 1.5rem; font-weight: 700; margin-bottom: 16px; color: var(--navy); }
+    .about p { color: var(--text-light); font-size: 1rem; margin-bottom: 12px; }
+    footer { border-top: 1px solid var(--border); padding: 32px 24px; text-align: center; color: var(--text-light); font-size: 0.85rem; }
+    footer a, .about a { color: var(--accent); text-decoration: none; }
+    footer a:hover, .about a:hover { text-decoration: underline; }
+    @media (max-width: 640px) {
+      nav { padding: 16px 20px; }
+      .hero { padding: 60px 20px 56px; }
+      .hero h1 { font-size: 2rem; }
+      .product-card { flex-direction: column; text-align: center; padding: 28px 24px; }
+      .about { padding: 48px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="/" class="logo">Intuitive Apps LLC</a>
+    <ul class="nav-links">
+      <li><a href="#products">Products</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="mailto:contact@intuitiveappsllc.com">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <h1>Thoughtful apps for everyday life</h1>
+    <p>Intuitive Apps LLC builds mobile applications focused on wellbeing, mindfulness, and building better daily habits.</p>
+  </section>
+
+  <section class="products" id="products">
+    <h2>Our Products</h2>
+    <div class="product-card">
+      <div class="product-icon"><div class="sun"></div></div>
+      <div class="product-info">
+        <h3><a href="https://mindfulmorningsapp.com">Mindful Mornings</a></h3>
+        <p>A daily gratitude and mindfulness app with personalized mantras and evening reflection. Free on iOS.</p>
+        <span class="product-badge">Coming Soon</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About</h2>
+    <p>Intuitive Apps LLC is an independent software company building apps that help people develop positive daily habits. Based in the United States.</p>
+    <p>For inquiries, reach us at <a href="mailto:contact@intuitiveappsllc.com">contact@intuitiveappsllc.com</a>.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Intuitive Apps LLC. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
